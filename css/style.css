@@ -1,11 +1,3 @@
-/*-------------------------------------------------------------------- /
-Project:    	MastR
-Version:    	1.0
-Last change:    Initial RELEASED
-Primary use:    One Page Template
-*---------------------------------------------------------------------- */
-
-
 /*---------------------------------------------------------------------- /
 Table of Contents
 ------------------------------------------------------------------------ /
@@ -42,6 +34,37 @@ Table of Contents
 ------------------------------------------------------------------------ /
 Table of Contents End
 ------------------------------------------------------------------------*/
+
+/*---------- PACKAGES ----------*/
+.packages {
+    font-size: 22px !important;
+    line-height: 12px;
+    margin: 20px 0px !important;
+}
+.packages-detail {
+    font-size: 16px !important;
+    line-height: 12px;
+    margin: 20px 0px !important;
+}
+.package-text {
+    font-size: 16px !important;
+}
+.package-icon {
+    color: #318EC3;
+}
+/*.package-icon:hover {
+    color: green;
+}*/
+.package-contact {
+    display: flex;
+    justify-content: center;
+}
+.package-offer {
+    border: 1px solid #ccc;
+}
+/*.package-icon:hover {
+    color: #318EC3;
+}*/
 
 /*---------- GENERAL STRUCTURES ----------*/
 
