@@ -34,6 +34,19 @@ Table of Contents
 ------------------------------------------------------------------------ /
 Table of Contents End
 ------------------------------------------------------------------------*/
+@font-face {
+    font-family: origami;
+    src: url('../fonts/origa.ttf');
+}
+
+.newLogo {
+    font-family: 'origami';
+    font-size: 75px;
+    color: white;
+    letter-spacing: -16px;
+    line-height: 47px;
+}
+
 
 /*---------- PACKAGES ----------*/
 .packages {
