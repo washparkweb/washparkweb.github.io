@@ -11,6 +11,10 @@
   })
 
   $(document).ready(function () {
+    $('.newLogo').click(function(){
+      $('.fall-off').addClass('hinge');
+    })
+
     /*---------- RESIZE TRIGGER ----------*/
     $(window).trigger('resize')
 
