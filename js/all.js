@@ -15,6 +15,11 @@
       $('.fall-off').addClass('hinge');
     })
 
+    setTimeout(function(){
+      $('.home-content').css('background-color', 'transparent');
+      // $('.navbar-right').css('animation-delay','4s');
+    }, 4000);
+
     /*---------- RESIZE TRIGGER ----------*/
     $(window).trigger('resize')
 
