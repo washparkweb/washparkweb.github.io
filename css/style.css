@@ -2524,7 +2524,7 @@ hr {
   position: absolute;
   bottom: 20%;
   left: 50%;
-  margin-left: -16px;
+  /*margin-left: -16px;*/
   cursor: pointer;
   /*margin-bottom: 10%;*/
   /*animation-duration: 1s;*/
