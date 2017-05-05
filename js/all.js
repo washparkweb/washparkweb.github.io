@@ -11,34 +11,50 @@
   })
 
   $(document).ready(function () {
-    $('.newLogo').click(function(){
-      $('.fall-off').addClass('hinge');
+    $('.newLogo').click(function () {
+      $('.fall-off').addClass('hinge')
     })
 
-    setTimeout(function(){
-      $('.home-content').css('background-color', 'transparent');
-      // $('.navbar-right').css('animation-delay','4s');
-    }, 4000);
+    // $('.newLogo').mouseover(function () {
+    //   $('.wpwd-letters').addClass('color-change-5x')
+    // })
+    // $('.newLogo').mouseleave(function () {
+    //   $('.wpwd-letters').removeClass('color-change-5x')
+    // })
 
-    /*---------- RESIZE TRIGGER ----------*/
+    setTimeout(function () {
+      $('.home-content').css('background-color', 'transparent')
+      // $('.navbar-right').css('animation-delay','4s');
+    }, 4000)
+
+    $('.homebutton').mouseover(function () {
+      $('.homebutton i').removeClass('ion-ios-paperplane-outline')
+      $('.homebutton i').addClass('ion-ios-paperplane')
+    })
+    $('.homebutton').mouseleave(function () {
+      $('.homebutton i').addClass('ion-ios-paperplane-outline')
+      $('.homebutton i').removeClass('ion-ios-paperplane')
+    })
+
+    /* ---------- RESIZE TRIGGER ---------- */
     $(window).trigger('resize')
 
-    /*---------- PARALLAX ----------*/
+    /* ---------- PARALLAX ---------- */
     $(window).stellar()
 
-    /*---------- COUNTER ----------*/
+    /* ---------- COUNTER ---------- */
     $('.timer').counterUp({
       delay: 10,
       time: 5000
     })
 
-    /*---------- Masnory ----------*/
+    /* ---------- Masnory ---------- */
 
     $('.grid').isotope({
       itemSelector: '.grid-item'
     })
 
-    /*---------- ANIMSITION - TRANSITION BETWEEN PAGES ----------*/
+    /* ---------- ANIMSITION - TRANSITION BETWEEN PAGES ---------- */
     $('.animsition').animsition({
       inClass: 'fade-in',
       outClass: 'fade-out',
@@ -68,9 +84,9 @@
       })
     })
 
-    /*---------- Clients Slider ----------*/
+    /* ---------- Clients Slider ---------- */
     $('#owl-clients').owlCarousel({
-      autoPlay: 4000,
+      autoPlay: 1500,
       pagination: false,
       items: 6, // 10 items above 1000px browser width
       itemsDesktop: [1000, 5], // 5 items between 1000px and 901px
@@ -79,14 +95,14 @@
       itemsMobile: [320, 1] // itemsMobile disabled - inherit from itemsTablet option
     })
 
-    /*---------- Testimonials Slider ----------*/
+    /* ---------- Testimonials Slider ---------- */
     $('#owl-testimonials').owlCarousel({
       singleItem: true,
       autoPlay: true,
       pagination: false
     })
 
-    /*---------- Slider ----------*/
+    /* ---------- Slider ---------- */
     $('.slider').owlCarousel({
       navigation: true, // Show next and prev buttons
       autoPlay: true,
@@ -114,7 +130,7 @@
       fixedContentPos: false
     })
 
-    /*---------- ROTATE TEXT ----------*/
+    /* ---------- ROTATE TEXT ---------- */
     $('.rotate').textrotator({
       animation: 'flipUp', // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
       separator: ',', // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
@@ -174,7 +190,7 @@
   )
   wow.init()
 
-  /*---------- CONTACT FORM VALIDATION ----------*/
+  /* ---------- CONTACT FORM VALIDATION ---------- */
 
   $('input,textarea').jqBootstrapValidation({
     preventSubmit: true,
@@ -239,9 +255,8 @@
     $(this).tab('show')
   })
 
-  /*When clicking on Full hide fail/success boxes */
+  /* When clicking on Full hide fail/success boxes */
   $('#name').focus(function () {
     $('#success').html('')
   })
-
 })(jQuery)
