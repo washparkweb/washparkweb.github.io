@@ -15,6 +15,9 @@
       $('.fall-off').addClass('hinge')
     })
 
+    var theCurrentYear = new Date().getFullYear();
+    $('.currentYear').html(theCurrentYear);
+
     // $('.newLogo').mouseover(function () {
     //   $('.wpwd-letters').addClass('color-change-5x')
     // })
@@ -25,16 +28,16 @@
     setTimeout(function () {
       $('.home-content').css('background-color', 'transparent')
       // $('.navbar-right').css('animation-delay','4s');
-    }, 4000)
+    }, 2000)
 
-    $('.homebutton').mouseover(function () {
-      $('.homebutton i').removeClass('ion-ios-paperplane-outline')
-      $('.homebutton i').addClass('ion-ios-paperplane')
-    })
-    $('.homebutton').mouseleave(function () {
-      $('.homebutton i').addClass('ion-ios-paperplane-outline')
-      $('.homebutton i').removeClass('ion-ios-paperplane')
-    })
+    // $('.homebutton').mouseover(function () {
+    //   $('.homebutton i').removeClass('ion-ios-paperplane-outline')
+    //   $('.homebutton i').addClass('ion-ios-paperplane')
+    // })
+    // $('.homebutton').mouseleave(function () {
+    //   $('.homebutton i').addClass('ion-ios-paperplane-outline')
+    //   $('.homebutton i').removeClass('ion-ios-paperplane')
+    // })
 
     /* ---------- RESIZE TRIGGER ---------- */
     $(window).trigger('resize')
