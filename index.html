@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/ >
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,400italic,700" rel="stylesheet" type="text/css">
     <link href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" />
     <!-- Bootstrap -->
@@ -71,13 +71,24 @@
     <!-- End Navigation -->
 
     <!-- Home Section -->
-    <div id="home-section" style="background:url('https://res.cloudinary.com/wash-park-web/image/upload/v1493951595/Wash_Park_Large_aw8ej9.jpg') no-repeat;" data-stellar-background-ratio="0.5">
-        <div class="gradient-overlay"></div>
+    <!-- <div id="home-section" style="background:url('https://res.cloudinary.com/wash-park-web/image/upload/v1493951595/Wash_Park_Large_aw8ej9.jpg') no-repeat;" data-stellar-background-ratio="0.5"> -->
+    <div id="home-section" data-stellar-background-ratio="0.5">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+            <!-- <source src="img/vid.webm" type="video/webm"> -->
+            <source src="img/vid.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="gradient-overlay"></div> -->
         <div class="height-full">
             <!-- Hero Content -->
             <div class="home-content">
                 <a class="homebutton" data-scroll href="#about">
-                    <i class="icon ion-code-download"></i>
+                    <!-- <i class="icon ion-code-download"></i> -->
+                    <!-- <div class="scroll-down">
+                        <div class="mouse">
+                          <div class="scroll"></div>
+                        </div>
+                    </div> -->
+                    <div class="mouse"></div>
                 </a>
                 <div class="home-text">
                     <h1><span class="hometxt">WASH PARK</span></br>
@@ -163,13 +174,13 @@
                     </div>
                 </div> /CONTENT BOX -->
             <!-- </div> -->
-            <div class="row no-padding">
+            <div class="row">
                 <!-- CONTENT BOX -->
-                <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".4s">
+                <div class="content-col col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".4s">
+                    <div class="content-box-icon">
+                        <i class="icon-genius"></i>
+                    </div>
                     <div class="content-box">
-                        <div class="content-box-icon">
-                            <i class="icon-genius"></i>
-                        </div>
                         <h5 class="content-box-title">Cutting Edge Technology</h5>
                         <div class="content-box-text">
                             We develop using full-stack JavaScript - one of the most popular and powerful programming languages in the world. JavaScript is the scripting language of the World Wide Web and is already built into all major web browsers, which makes it the natural choice for web development. Your project is an investment - using JavaScript helps 'future-proof' that investment. JavaScript is used by Google, Microsoft, IBM, Groupon, LinkedIn, Netflix, PayPal, and Yahoo!, just to name a few.
@@ -178,11 +189,11 @@
                 </div><!-- /CONTENT BOX -->
 
                 <!-- CONTENT BOX -->
-                <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="content-col col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="content-box-icon">
+                        <i class="icon-caution"></i>
+                    </div>
                     <div class="content-box">
-                        <div class="content-box-icon">
-                            <i class="icon-caution"></i>
-                        </div>
                         <h5 class="content-box-title font-alt">Beware of JAWS</h5>
                         <div class="content-box-text">
                             JAWS stands for Just Another Wordpress Site. Wordpress is a fine choice for an anonymous blog, but if you are trying to build a brand, an online presence, or represent your organization, then Wordpress is a poor choice. The outdated styling and interface is clunky and the plugins, while seemingly helpful, are vulnerable to common Web attacks(notably including 7 of the Top 10 E-Commerce plugins). It's built to run on PHP 5.2 which was released in 2006...<strong>10 years ago</strong>. It's been unsupported and has not received any security patches since 2011, <strong>5 years ago</strong>.
@@ -191,11 +202,11 @@
                 </div><!-- /CONTENT BOX -->
 
                 <!-- CONTENT BOX -->
-                <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".6s">
+                <div class="content-col col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".6s">
+                    <div class="content-box-icon">
+                        <i class="icon-mobile"></i>
+                    </div>
                     <div class="content-box">
-                        <div class="content-box-icon">
-                            <i class="icon-mobile"></i>
-                        </div>
                         <h5 class="content-box-title font-alt">Responsive design</h5>
                         <div class="content-box-text">
                             Mobile devices have eclipsed computers as the most popular device for browsing the internet. It is critical for your website and/or web application to not only render well on both a computer and a mobile device, but also provide the same user experience. One of our core development principles is a 'mobile-first' design philosophy - to ensure that the User Interface(UI) and, accordingly, the User Experience(UX), transition seamlessly from desktop to mobile without any loss to functionality or content. Ideally, the experience should be consistent whether you're viewing it on a 5" phone screen, a 10" tablet, a 17" computer screen, or a 50" Internet-enabled television.
@@ -204,11 +215,11 @@
                 </div><!-- /CONTENT BOX -->
 
                 <!-- CONTENT BOX -->
-                <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="content-col col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="content-box-icon">
+                        <i class="icon-heart"></i>
+                    </div>
                     <div class="content-box">
-                        <div class="content-box-icon">
-                            <i class="icon-heart"></i>
-                        </div>
                         <h5 class="content-box-title font-alt">Inclusive, not Exclusive</h5>
                         <div class="content-box-text">
                             We firmly believe in the democratization of technology. With the recent growth of cloud computing, hosting, and storage, more solutions are available than ever before, which allows us to utilize these solutions for clients of all sizes. We have solutions to fit every budget. Don't have a budget, or, are a bootstrapping entrepreneur intent on doing it yourself? Well we not only salute you, but would be more than happy to give suggestions that will make your quest easier. Price? A cup of coffee. We believe in solutions for <strong>all</strong>.
@@ -217,11 +228,11 @@
                 </div><!-- /CONTENT BOX -->
 
                 <!-- CONTENT BOX -->
-                <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".8s">
+                <div class="content-col col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".8s">
+                    <div class="content-box-icon">
+                        <i class="icon-bargraph"></i>
+                    </div>
                     <div class="content-box">
-                        <div class="content-box-icon">
-                            <i class="icon-bargraph"></i>
-                        </div>
                         <h5 class="content-box-title font-alt">SEO/Internet Marketing</h5>
                         <div class="content-box-text">
                             Contrary to the popular(and profitable) dogma surrounding 'SEO Marketing', we believe the best strategies are clear-cut and fundamental: clean code, good content, and quality back-links. Black-hat SEO, spamdexing, and other 'techniques' to artificially increase a site's rank in search results are not a valid marketing strategy. Depending too heavily on search engine traffic and/or trying to 'game' search algorithms is not only unethical and dangerous(violation will get your site removed), it's also foolish. Search engine algorithms change often. In 2010 alone, Google made over 500 algorithm changes – that's almost 1.5 <strong>per day</strong>.
@@ -230,11 +241,11 @@
                 </div><!-- /CONTENT BOX -->
 
                 <!-- CONTENT BOX -->
-                <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".9s">
+                <div class="content-col col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".9s">
+                    <div class="content-box-icon">
+                        <i class="icon-happy"></i>
+                    </div>
                     <div class="content-box">
-                        <div class="content-box-icon">
-                            <i class="icon-happy"></i>
-                        </div>
                         <h5 class="content-box-title font-alt">Support Consulting</h5>
                         <div class="content-box-text">
                             Using a 'Super Amazing Website Builder' on Squarespace, Wix, Shopify, Wordpress, etc. to do-it-yourself, but would love to ask a developer a few quick questions or pick their brain for best practices/tips/advice? Reach out to us and we'll gladly answer your questions.
@@ -357,7 +368,7 @@
     <!-- Contact Section -->
     <section id="contact" class="bg-light dark">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row contact-row">
                 <div id="contact-us" class="col-xs-12 col-md-4 col-md-offset-1 contact-info wow fadeIn" data-wow-delay=".4s">
                     <div class="row heading">
                         <div class="col-md-12">
@@ -375,7 +386,7 @@
                                     <i class="icon-pencil"></i>
                                 </div>
                                 <div>
-                                    <p class="contact-title">hello@washparkweb.com</p>
+                                    <p class="contact-title"><a href="mailto:hello@washparkweb.com">hello@washparkweb.com</a></p>
                                 </div>
                             </div><!-- /.contact-box -->
                         </div><!-- /.col-md-12 -->

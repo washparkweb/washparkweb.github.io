@@ -1456,6 +1456,113 @@ Table of Contents End
   height: 100vh;
 }
 
+/*---------- MOUSE SCROLL ----------*/
+/* .homebutton {
+  background-color: #000;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+} */
+/* .scroll-down {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mouse {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroll {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+} */
+
+.mouse {
+  width: 26px;
+  height: 42px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.mouse:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -2px;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  opacity: 1;
+  -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+  transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+  -webkit-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+@-webkit-keyframes scroll {
+  0%, 20% {
+    -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+    transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+  }
+  10% {
+    -webkit-transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+    transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+    transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+    opacity: 0.01;
+  }
+}
+@keyframes scroll {
+  0%, 20% {
+    -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+    transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+  }
+  10% {
+    -webkit-transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+    transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+    transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+    opacity: 0.01;
+  }
+}
+
+
+
+
 /*---------- PACKAGES ----------*/
 .packages {
     font-size: 22px !important;
@@ -1753,6 +1860,8 @@ hr {
 
 #contact-us {
     margin-top: 100px;
+    /* border: 3px solid #eee; */
+    /* box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149); */
 }
 
 .mobile-source {
@@ -1969,7 +2078,7 @@ hr {
 .bg-light{
 	background: #ffffff;
 	color: #151515;
-    border-top: 1px solid #f8f8f8;
+  border-top: 1px solid #f8f8f8;
 }
 
 .bg-grey{
@@ -2552,6 +2661,23 @@ hr {
   height: 100vh;
 }
 
+video#bgvid { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /* background: url(https://res.cloudinary.com/wash-park-web/image/upload/v1493951595/Wash_Park_Large_aw8ej9.jpg) no-repeat; */
+  background-size: cover; 
+}
+
 #home-section .home-content{
 	display: table;
 	position: relative;
@@ -2585,7 +2711,8 @@ hr {
 #home-section .home-text h1{
 	font-size: 6em;
   font-weight: 900;
-	letter-spacing: 5px !important;
+  /* letter-spacing: 5px !important; */
+  letter-spacing: -4px !important;
 	color: #fff;
 	margin-bottom: 50px;
 }
@@ -2640,8 +2767,9 @@ hr {
 
 /*---------- ABOUT SECTION ----------*/
 
-#about{
-	position: relative;
+#about {
+  position: relative;
+  overflow: hidden;
 }
 
 #about .bg-image-about {
@@ -2660,9 +2788,6 @@ hr {
 /*#about .side-text {
     padding: 80px 80px 0 80px;
 }*/
-
-#about .bg-image-about {}
-
 
 /*---------- TEAM SECTION -------------------*/
 
@@ -2784,26 +2909,37 @@ hr {
 
 /*---------- SERVICES -----------------------*/
 
+#services {
+  /* background: url('../img/topo.png');
+  background-repeat: space; */
+}
+
+#services .content-col {
+  display: flex;
+}
+
 #services .content-box {
-    margin: 25px 0;
+    /* margin: 25px 0; */
+    margin: 12px 0;
 }
 
 #services .content-box-icon {
-    text-align: center;
+    /* text-align: center; */
+    margin-right: 20px;
     font-size: 42px;
     color: #C03926;
 }
 
 #services .content-box-title {
     font-size: 16px;
-    letter-spacing: 2px !important;
-    text-align: center;
-    margin: 5px 0 18px;
+    letter-spacing: 0 !important;
+    /* text-align: center; */
+    margin: 5px 0 15px;
 }
 
 #services .content-box-text {
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #services .row.heading {
@@ -3495,7 +3631,6 @@ hr {
 
 
 /*---------- CONTACT SECTION ----------*/
-
 
 #contact .contact-info{
     padding: 20px;
